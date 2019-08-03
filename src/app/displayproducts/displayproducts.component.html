@@ -1,0 +1,20 @@
+
+<div align="left">
+    <h1>Products List</h1>
+    <table border="2">
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Category</th>
+        </tr>
+        <tr *ngFor="let index of productDetails ">
+            <td>{{index.id}}</td>
+            <td>{{index.name}}</td>
+            <td>{{index.price}}</td>
+            <td>{{index.category}}</td>
+            <td><button (click)="delete(index)" type="button">Delete</button></td>
+
+        </tr>
+    </table>
+</div>

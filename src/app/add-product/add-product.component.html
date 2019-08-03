@@ -1,0 +1,27 @@
+<form #details="ngForm" (ngSubmit)="add(details.value)">
+    <div>
+        <span>
+            Id
+        </span>
+        <input type="text" name="id" ngModel>
+    </div>
+    <div>
+        <span>
+            Name
+        </span>
+        <input type="text" name="name" ngModel>
+    </div>
+    <div>
+    <span>
+        Price
+    </span>
+    <input type="text" name="price" ngModel>
+</div>
+<div>
+    <span>
+        category
+    </span>
+    <input type="text" name="category" ngModel>
+</div>
+<input type="submit" value="Add Product">
+</form>
